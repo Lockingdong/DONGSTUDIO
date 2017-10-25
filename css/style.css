@@ -8,7 +8,7 @@ section#section_contact {
   display: block;
 }
 
-body {
+body, html {
   overflow-x: hidden;
 }
 
