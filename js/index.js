@@ -59,8 +59,8 @@ $(window).scroll(()=>{
 // });
 //緩慢滑動
 $(document).on("click", "li a, a.navbar-brand, .scrolldown a", function(evt){
-  evt.preventDefault();
-  var target = $(this).attr("href")
+  //evt.preventDefault();
+  var target = $(this).attr("hreftg")
   //alert(target)
   $("html").animate({
     scrollTop: $(target).offset().top + 1

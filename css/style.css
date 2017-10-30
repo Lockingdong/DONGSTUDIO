@@ -743,6 +743,31 @@ footer#footer h6 {
   #send {
     width: 100% !important;
   }
+
+  .bgimg {
+    left: 18% !important;
+  }
+
+  .titlearea h1 {
+    font-size: 50px !important;
+  }
+  .titlearea h4 {
+    font-size: 20px !important;
+  }
+  .titlearea span {
+    display: block;
+  }
+
+  #section_about .myphoto {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  #section_about h1, #section_about h5 {
+    text-align: center !important;
+  }
+  #section_about .col-sm-12 {
+    text-align: center !important;
+  }
 }
 .webmask {
   position: fixed;
