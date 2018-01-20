@@ -106,6 +106,7 @@ header .container .row .col-sm-12 {
   position: relative;
 }
 header .container .row .col-sm-12 .titlearea {
+  transition: 0s;
   position: absolute;
   left: 11.1%;
   bottom: -65px;
