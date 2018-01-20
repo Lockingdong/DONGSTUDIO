@@ -34,6 +34,7 @@ let rungraphic = (obj1, obj2, obj3, deg) =>{
 //-------------------------------------------
 var scrollTop;
 $(window).scroll(()=>{
+  
   scrollTop = $(window).scrollTop();
   console.log(scrollTop);
   if($(window).scrollTop() <= $("#section_about").offset().top){
@@ -41,7 +42,7 @@ $(window).scroll(()=>{
   }else{
     $("nav").removeClass("navtop").addClass("navshadow");
   }
-  if($(window).scrollTop() >= $("#section_skill").offset().top - 120){
+  if(scrollTop >= $("#section_skill").offset().top - 120){
     rungraphic("#skillhtml .rec1", "#skillhtml .rec2", "#skillhtml .rec3", 290);
     rungraphic("#skillcss .rec1", "#skillcss .rec2", "#skillcss .rec3", 270);
     rungraphic("#skillJS .rec1", "#skillJS .rec2", "#skillJS .rec3", 180);
@@ -91,7 +92,6 @@ $(window).mousemove(function(evt){
     $(".x3").css("transform", "scale(0.4) translateX("+ (x/10) +"px)");
     $(".topimg").css("transform", "translateX("+ ((-50) +(x/-250)) +"%)");
   }
-
 });
 
 //---------------------------------------------
