@@ -32,8 +32,10 @@ let rungraphic = (obj1, obj2, obj3, deg) =>{
 
 
 //-------------------------------------------
+var scrollTop;
 $(window).scroll(()=>{
-  console.log($(window).scrollTop())
+  scrollTop = $(window).scrollTop();
+  console.log(scrollTop);
   if($(window).scrollTop() <= $("#section_about").offset().top){
     $("nav").addClass("navtop").removeClass("navshadow");
   }else{
