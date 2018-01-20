@@ -87,6 +87,8 @@ $(window).mousemove(function(evt){
     $(".x3").css("transform", "scale(0.4) translateX("+ (x/10) +"px)");
     $(".topimg").css("transform", "translateX("+ ((-50) +(x/-250)) +"%)");
   }
+  $(".titlearea").css("bottom",-65-(scrollTop/1.6)+"px");
+  $(".bgimg").css("bottom",-(scrollTop/2)+"px");
 });
 
 //---------------------------------------------
