@@ -48,6 +48,8 @@ $(window).scroll(()=>{
     rungraphic("#skillTOEIC .rec1", "#skillTOEIC .rec2", "#skillTOEIC .rec3", 290);
 
   }
+  $(".titlearea").css("bottom",-65-(scrollTop/1.6)+"px");
+  $(".bgimg").css("bottom",-(scrollTop/2)+"px");
 });
 // $(".navbar-toggle").click(function(){
 //   if($("nav").css("background-color") == "rgb(245, 245, 245)"){
@@ -87,8 +89,7 @@ $(window).mousemove(function(evt){
     $(".x3").css("transform", "scale(0.4) translateX("+ (x/10) +"px)");
     $(".topimg").css("transform", "translateX("+ ((-50) +(x/-250)) +"%)");
   }
-  $(".titlearea").css("bottom",-65-(scrollTop/1.6)+"px");
-  $(".bgimg").css("bottom",-(scrollTop/2)+"px");
+
 });
 
 //---------------------------------------------
