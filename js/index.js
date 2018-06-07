@@ -51,7 +51,12 @@ $(window).scroll(()=>{
     rungraphic("#skillTOEIC .rec1", "#skillTOEIC .rec2", "#skillTOEIC .rec3", 290);
 
   }
-  $(".titlearea").css("bottom",-65-(scrollTop/1.6)+"px");
+  if($(window).scrollTop() > $("#section_about").offset().top){
+    return false;
+  }else{
+    $(".titlearea").css("bottom",-65-(scrollTop/2)+"px");
+  }
+  
   $(".bgimg").css("bottom",-(scrollTop/2)+"px");
 });
 // $(".navbar-toggle").click(function(){
