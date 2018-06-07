@@ -6,6 +6,13 @@ section {
 section#section_contact {
   display: block; }
 
+html {
+  overflow-x: hidden; }
+
+body {
+  background-size: cover;
+  overflow-x: hidden; }
+
 body {
   overflow-x: hidden; }
 
