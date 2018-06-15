@@ -25,7 +25,15 @@
     <!-- End Facebook Pixel Code-->
   </head>
   <body>
-    <div class="webmask"></div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- <div class="webmask"></div>
     <div class="logoplace">
       <div class="logoanimate">
         <div class="grid">
@@ -46,7 +54,7 @@
         <div class="logoline centerline"></div>
       </div>
       <div class="logoname"><span>DONG</span><span>STUDIO</span></div>
-    </div>
+    </div> -->
     <nav class="navbar navbar-default navbar-fixed-top at_top navtop">
       <div class="container">
         <div class="navbar-header">
@@ -317,6 +325,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 footerlogo"><img class="icon footericon" src="images/footer-07.svg" alt=""></div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Flockingdong.github.io%2FDONGSTUDIO%2F&layout=button&size=small&mobile_iframe=true&width=52&height=20&appId" width="52" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          <div class="fb-share-button" data-href="https://lockingdong.github.io/DONGSTUDIO/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flockingdong.github.io%2FDONGSTUDIO%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
           <div class="col-sm-12">
             <h6>Copyright © 2017 DONGSTUDIO.</h6>
           </div>
